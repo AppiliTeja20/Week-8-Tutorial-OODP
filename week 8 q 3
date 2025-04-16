@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <typename T>
+class Storage {
+private:
+    T value;
+
+public:
+    Storage(T v) : value(v) {}
+
+    void display() {
+        cout << value << endl;
+    }
+};
+
+int main() {
+    Storage<int> intStorage(42);
+    Storage<float> floatStorage(3.14);
+    Storage<string> stringStorage("Hello, World!");
+
+    intStorage.display();
+    floatStorage.display();
+    stringStorage.display();
+
+    return 0;
+}
