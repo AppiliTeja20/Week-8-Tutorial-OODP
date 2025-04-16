@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <typename T>
+void display(T value) {
+    cout << value << endl;
+}
+
+int main() {
+    int num = 42;
+    float decimal = 3.14;
+    string text = "Hello, World!";
+
+    display(num);
+    display(decimal);
+    display(text);
+
+    return 0;
+}
